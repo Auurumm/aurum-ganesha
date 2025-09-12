@@ -1,0 +1,71 @@
+/* 반응형 설정 - 데스크톱 브라우저 크기에 따라 조정 */
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+html {
+  width: 100% !important;
+  height: 100% !important;
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+}
+
+#app {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* 반응형 컨테이너 */
+.responsive-container {
+  width: 100vw !important;
+  min-height: 100vh !important;
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+}
+
+/* 데스크톱 브라우저별 반응형 설정 */
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .responsive-container {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .responsive-container {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .responsive-container {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .responsive-container {
+    font-size: 1.2rem;
+  }
+}
+
+/* 초대형 화면 대응 */
+@media (min-width: 3440px) {
+  .responsive-container {
+    font-size: 1.4rem;
+  }
+}

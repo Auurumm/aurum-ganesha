@@ -1,0 +1,289 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --body-text-color: rgba(170, 170, 170, 1);
+  --body-text-font-family: "Sora", Helvetica;
+  --body-text-font-size: 16px;
+  --body-text-font-style: normal;
+  --body-text-font-weight: 400;
+  --body-text-letter-spacing: -0.8px;
+  --body-text-line-height: 26px;
+  --button-text-font-family: "Chakra Petch", Helvetica;
+  --button-text-font-size: 16px;
+  --button-text-font-style: normal;
+  --button-text-font-weight: 700;
+  --button-text-letter-spacing: -0.8px;
+  --button-text-line-height: 26px;
+  --CP-body-4-font-family: "Pretendard", Helvetica;
+  --CP-body-4-font-size: 22px;
+  --CP-body-4-font-style: normal;
+  --CP-body-4-font-weight: 600;
+  --CP-body-4-letter-spacing: -0.6599999999999998px;
+  --CP-body-4-line-height: 35px;
+  --CP-body1-font-family: "Pretendard", Helvetica;
+  --CP-body1-font-size: 14px;
+  --CP-body1-font-style: normal;
+  --CP-body1-font-weight: 500;
+  --CP-body1-letter-spacing: -0.42px;
+  --CP-body1-line-height: 21px;
+  --CP-body2-font-family: "Pretendard", Helvetica;
+  --CP-body2-font-size: 18px;
+  --CP-body2-font-style: normal;
+  --CP-body2-font-weight: 400;
+  --CP-body2-letter-spacing: -0.54px;
+  --CP-body2-line-height: 27px;
+  --CP-body3-font-family: "Pretendard", Helvetica;
+  --CP-body3-font-size: 20px;
+  --CP-body3-font-style: normal;
+  --CP-body3-font-weight: 600;
+  --CP-body3-letter-spacing: -0.6px;
+  --CP-body3-line-height: 35px;
+  --CP-btn-text-font-family: "Pretendard", Helvetica;
+  --CP-btn-text-font-size: 14px;
+  --CP-btn-text-font-style: normal;
+  --CP-btn-text-font-weight: 600;
+  --CP-btn-text-letter-spacing: -0.42px;
+  --CP-btn-text-line-height: 100%;
+  --CP-h1-font-family: "Pretendard", Helvetica;
+  --CP-h1-font-size: 28px;
+  --CP-h1-font-style: normal;
+  --CP-h1-font-weight: 700;
+  --CP-h1-letter-spacing: -0.84px;
+  --CP-h1-line-height: 42px;
+  --CP-h2-font-family: "Pretendard", Helvetica;
+  --CP-h2-font-size: 48px;
+  --CP-h2-font-style: normal;
+  --CP-h2-font-weight: 700;
+  --CP-h2-letter-spacing: -1.44px;
+  --CP-h2-line-height: 72px;
+  --CP-h3-font-family: "Pretendard", Helvetica;
+  --CP-h3-font-size: 64px;
+  --CP-h3-font-style: normal;
+  --CP-h3-font-weight: 700;
+  --CP-h3-letter-spacing: -1.92px;
+  --CP-h3-line-height: 96px;
+  --cpbg-black: rgba(20, 22, 18, 1);
+  --cpbg-white: rgba(255, 255, 255, 0.1);
+  --cpblack: rgba(17, 17, 17, 1);
+  --cpbody-seconary-text: rgba(170, 170, 170, 1);
+  --cpbody-text: rgba(180, 185, 192, 1);
+  --cpstroke: rgba(102, 102, 102, 1);
+  --cpwhite: rgba(255, 255, 255, 1);
+  --gradient: rgba(173, 255, 0, 1);
+  --h2-font-family: "Chakra Petch", Helvetica;
+  --h2-font-size: 60px;
+  --h2-font-style: normal;
+  --h2-font-weight: 700;
+  --h2-letter-spacing: -3px;
+  --h2-line-height: 70px;
+  --h4-font-family: "Chakra Petch", Helvetica;
+  --h4-font-size: 21px;
+  --h4-font-style: normal;
+  --h4-font-weight: 700;
+  --h4-letter-spacing: 0px;
+  --h4-line-height: 31px;
+  --list-text-font-family: "Sora", Helvetica;
+  --list-text-font-size: 16px;
+  --list-text-font-style: normal;
+  --list-text-font-weight: 400;
+  --list-text-letter-spacing: -0.8px;
+  --list-text-line-height: 46px;
+  --shadow-1: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
